@@ -131,6 +131,19 @@
     line-height: 1.6;
 }
 
+#modo-btn {
+        margin-top: 10px;
+    display: inline-block;
+    background: #d95580;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
 @media (max-width: 768px) {
     .materias {
         flex-direction: column;
@@ -176,7 +189,7 @@ body.dark-mode {
   }
   
   .dark-mode a {
-    color: #90caf9;
+    color: #0e3555;
   }
   
 
