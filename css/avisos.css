@@ -14,7 +14,7 @@ main {
 }
 
 .materia {
-    background: #C39AC7;
+    background: #b265b9;
     border-radius: 12px;
     padding: 25px;
     color: white;
@@ -23,19 +23,19 @@ main {
 }
 
 .materia:nth-child(1) {
-    background: #C39AC7;
+    background: #b265b9;
 }
 
 .materia:nth-child(2) {
-    background: #B1DDEC;
+    background: #b265b9;
 }
 
 .materia:nth-child(3) {
-    background: #D1C4E9;
+    background: #b265b9;
 }
 
 .materia:nth-child(4) {
-    background: #C1C4E4;
+    background: #b265b9;
 }
 
 .materia:hover {

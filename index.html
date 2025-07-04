@@ -27,6 +27,7 @@
                 <li><a href="materias-2025.html">Materias 2025</a></li>
                 <li><a href="contacto.html">Contacto</a></li>
             </ul>
+            <button onclick="toggleModoOscuro()" id="modo-btn">🌙 Modo oscuro</button>
         </nav>
         <button class="nav-toggle" aria-label="Toggle menu">
           <i class="bi bi-list"></i>
@@ -113,14 +114,28 @@
     </footer>
 
     <script>
-      const navToggle = document.querySelector('.nav-toggle');
-      const nav = document.querySelector('nav');
+        // Menú desplegable (ya lo tenías)
+        const navToggle = document.querySelector('.nav-toggle');
+        const nav = document.querySelector('nav');
       
-      navToggle.addEventListener('click', () => {
+        navToggle.addEventListener('click', () => {
           nav.classList.toggle('open');
-      });
-    </script>
-    
+        });
+      
+        // 🌙 Modo claro/oscuro
+        const modoBtn = document.getElementById('modo-btn');
+      
+        modoBtn.addEventListener('click', () => {
+          document.body.classList.toggle('dark-mode');
+      
+          if (document.body.classList.contains('dark-mode')) {
+            modoBtn.textContent = '☀️ Modo claro';
+          } else {
+            modoBtn.textContent = '🌙 Modo oscuro';
+          }
+        });
+      </script>
+      
 </body>
 </html>
 
