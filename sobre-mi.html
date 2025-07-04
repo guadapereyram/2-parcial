@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre mí | Parcial N° 01 | Guadalupe Pereyra</title>
+    <meta name="description" content="Esta es la página Sobre Mí del parcial N° 1 de la materia Desarrollo una web. ¡Ingresá!">
+    <!-- FUENTE POPPINS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,400;1,100;1,200&display=swap" rel="stylesheet">
+    <!-- ICONOS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- Estilos GLOBALES -->
+    <link rel="stylesheet" href="css/header-footer.css" type="text/css">
+    <!-- CSS Principal -->
+    <link rel="stylesheet" href="css/sobre-mi.css" type="text/css">
+</head>
+<body>
+  <header>
+    <img src="img/logo-uade.png" alt="Logo UADE" class="logo">
+    <nav class="navbar">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="avisos.html">Avisos</a></li>
+            <li><a href="sobre-mi.html">Sobre mí</a></li>
+            <li><a href="materias-2025.html">Materias 2025</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
+    <button class="nav-toggle" aria-label="Toggle menu">
+      <i class="bi bi-list"></i>
+    </button>
+  </header>
+  <main>
+    <section>
+      <div class="contenedor-sobre-mi">
+        <div class="perfil">
+          <img src="img/guadalupe-pereyra.jpeg" alt="Foto de Guadalupe Pereyra">
+          <div class="info-principal">
+            <h1>Guadalupe Pereyra</h1>
+            <p>SEO Specialist</p>
+            <p>Estudiante de Licenciatura en Gestión de la Tecnología Online</p>
+            <a href="https://www.linkedin.com/in/guadalupe-pereyra/" target="_blank" class="boton-linkedin">LinkedIn</a>
+          </div>
+        </div>
+    
+        <div class="card card-rosa">
+          <h2>Quién soy</h2>
+          <p>¡Hola! Soy Guadalupe Pereyra, especialista en Posicionamiento Web - SEO.
+            Ayudo a empresas a mejorar su visibilidad en internet y atraer nuevos clientes de manera orgánica.
+            Trabajé en mercados B2B y B2C, desarrollando estrategias adaptadas a diferentes audiencias.
+            Actualmente, brindo servicios de posicionamiento de manera independiente, con soluciones personalizadas para cada proyecto.</p>
+        </div>
+    
+        <div class="card card-celeste">
+          <h2>Mis intereses personales y profesionales</h2>
+          <p>Me atraen la programación, el diseño y el desarrollo web, intereses que descubrí gracias a mi papá, Jorge, que era programador y me transmitió su amor por la tecnología.
+          </p>
+          <br>
+          <p>Mi experiencia en SEO me dio una base sólida en posicionamiento digital, que hoy complemento con nuevos conocimientos en desarrollo web para ofrecer soluciones más integrales y orientadas al usuario.</p>
+        </div>
+    
+        <div class="card card-lila">
+          <h2>Pasatiempos</h2>
+          <ul>
+            <li>Cocinar y probar nuevas recetas</li>
+            <li>Pasar tiempo con amigos</li>
+            <li>Estar con mis mascotas</li>
+          </ul>
+        </div>
+    
+        <div class="card card-azul">
+          <h2>Motivación y futuro profesional</h2>
+          <p>Estoy convencida de que este cambio será una oportunidad increíble para crecer en tecnología y como persona. Me entusiasma construir productos digitales que realmente aporten valor.</p>
+          <br>
+          <p>Mi objetivo es crear sitios web accesibles, funcionales y optimizados, que no solo ofrezcan una buena experiencia de usuario, sino que también logren captar tráfico de calidad y transformar visitas en oportunidades reales de negocio.
+          </p>
+        </div>
+    
+      </div>
+    </section>    
+</main>
+
+    <footer>
+      <div class="footer-content">
+        <div class="footer-left">
+          <img src="img/logo-uade2.png" alt="Logo UADE">
+        </div>
+    
+        <div class="footer-center">
+          <p>© 2025 Guadalupe Pereyra. Todos los derechos reservados.</p>
+        </div>
+    
+        <div class="footer-right">
+          <a href="https://www.linkedin.com/in/guadalupe-pereyra/" target="_blank">
+            <i class="bi bi-linkedin"></i>
+            <span>LinkedIn</span>
+          </a>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      const navToggle = document.querySelector('.nav-toggle');
+      const nav = document.querySelector('nav');
+      
+      navToggle.addEventListener('click', () => {
+          nav.classList.toggle('open'); 
+      });
+    </script>
+
+</body>
+</html>

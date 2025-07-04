@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Materias | Parcial N° 01 | Guadalupe Pereyra</title>
+    <meta name="description" content="Esta es la página de Materias 2025 del parcial N° 1 de la materia Desarrollo una web. ¡Ingresá!">
+    <!-- FUENTE POPPINS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,400;1,100;1,200&display=swap" rel="stylesheet">
+    <!-- ICONOS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- Estilos GLOBALES -->
+    <link rel="stylesheet" href="css/header-footer.css" type="text/css">
+    <!-- CSS Principal -->
+    <link rel="stylesheet" href="css/materias.css" type="text/css">
+</head>
+<body>
+  <header>
+    <img src="img/logo-uade.png" alt="Logo UADE" class="logo">
+    <nav class="navbar">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="avisos.html">Avisos</a></li>
+            <li><a href="sobre-mi.html">Sobre mí</a></li>
+            <li><a href="materias-2025.html">Materias 2025</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
+    <button class="nav-toggle" aria-label="Toggle menu">
+      <i class="bi bi-list"></i>
+    </button>
+  </header>
+  <main>
+    <section class="materias">
+      <div class="lista-materias">
+        <h1>Materias 2025</h1>
+        <p>Esta sección enumera las materias cursadas durante el año 2025. A continuación, se detallan los nombres de cada asignatura, incluyendo un enlace directo a la página dedicada a Diseño y Desarrollo Web para más información.</p>
+        
+        <ul>
+          <li>
+            <img src="Lampara gris.svg" alt="Icono de algoritmia" width="24" height="24">
+            Introducción a la algoritmia
+          </li>
+          <li>
+            <img src="Lampara gris.svg" alt="Icono de sistemas" width="24" height="24">
+            Sistemas de información
+          </li>
+          <li>
+            <img src="Lampara gris.svg" alt="Icono de arquitectura" width="24" height="24">
+            Arquitectura de computadores
+          </li>
+          <li>
+            <img src="Lampara gris.svg" alt="Icono de marketing" width="24" height="24">
+            Marketing
+          </li>
+          <li>
+            <img src="Lampara gris.svg" alt="Icono de diseño web" width="24" height="24">
+            Diseño y Desarrollo Web
+          </li>
+        </ul>
+      </div>
+  
+      <div class="foto-materias">
+        <img src="img/portada-materias.png" alt="Foto relacionada a materias">
+      </div>
+    </section>
+  
+    <section class="acceso-materia">
+      <h2>Acceso a la materia Diseño y Desarrollo Web</h2>
+      <p>En esta sección encontrarás toda la información relevante, materiales y novedades relacionadas con la cursada de la materia.</p>
+      <form action="desarrollo-web.html">
+        <button type="submit" class="boton-materia">Ir a la materia</button>
+      </form>
+    </section>
+  </main>
+
+    <footer>
+      <div class="footer-content">
+        <div class="footer-left">
+          <img src="img/logo-uade2.png" alt="Logo UADE">
+        </div>
+    
+        <div class="footer-center">
+          <p>© 2025 Guadalupe Pereyra. Todos los derechos reservados.</p>
+        </div>
+    
+        <div class="footer-right">
+          <a href="https://www.linkedin.com/in/guadalupe-pereyra/" target="_blank">
+            <i class="bi bi-linkedin"></i>
+            <span>LinkedIn</span>
+          </a>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      const navToggle = document.querySelector('.nav-toggle');
+      const nav = document.querySelector('nav');
+      
+      navToggle.addEventListener('click', () => {
+          nav.classList.toggle('open');
+      });
+    </script>
+
+</body>
+</html>

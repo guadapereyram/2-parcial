@@ -1,0 +1,124 @@
+@import url('header-footer.css');
+
+main {
+    padding: 120px 50px 50px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+  
+.materias {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    flex-wrap: wrap;
+    margin-bottom: 60px;
+}
+  
+.lista-materias {
+    flex: 1 1 40%;
+    padding: 40px 20px;
+}
+  
+.lista-materias h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+  
+.lista-materias p {
+    font-size: 18px;
+    margin-bottom: 30px;
+    line-height: 1.8;
+}
+  
+.lista-materias ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+  
+.lista-materias li {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 18px;
+    line-height: 1.8;
+    padding: 10px 0;
+}
+  
+.lista-materias li:nth-child(even) {
+    background-color: #f5f5f5;
+    border-radius: 8px;
+}
+  
+.lista-materias li img {
+    width: 24px;
+    height: 24px;
+}
+  
+.foto-materias {
+    flex: 1 1 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+  
+.foto-materias img {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    border-radius: 12px;
+}
+  
+.acceso-materia {
+    text-align: center;
+}
+  
+.acceso-materia h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+  
+.acceso-materia p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+  
+.boton-materia {
+    display: inline-block;
+    padding: 12px 24px;
+    background: #d95580;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
+    transition: background 0.3s ease;
+}
+
+.boton-materia:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+  
+@media (max-width: 768px) {
+    .materias {
+        flex-direction: column;
+    }
+  
+    .lista-materias,
+    .foto-materias {
+        flex: 1 1 100%;
+        text-align: center;
+    }
+  
+    .lista-materias ul {
+        text-align: left;
+        margin: 0 auto;
+        max-width: 400px;
+    }
+  
+    .foto-materias img {
+        max-width: 300px;
+    }
+}

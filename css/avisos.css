@@ -1,0 +1,72 @@
+@import url('header-footer.css');
+
+main {
+    padding: 120px 50px 50px;
+    max-width: 1200px;
+    margin: 0 auto; 
+}
+
+.contenedor-materias {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.materia {
+    background: #C39AC7;
+    border-radius: 12px;
+    padding: 25px;
+    color: white;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.materia:nth-child(1) {
+    background: #C39AC7;
+}
+
+.materia:nth-child(2) {
+    background: #B1DDEC;
+}
+
+.materia:nth-child(3) {
+    background: #D1C4E9;
+}
+
+.materia:nth-child(4) {
+    background: #C1C4E4;
+}
+
+.materia:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+.materia h2 {
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+.materia ul {
+    list-style: disc inside;
+}
+
+.materia ul li {
+    margin-bottom: 12px;
+    line-height: 1.6;
+}
+
+
+h1 {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+#texto-h1 {
+    font-size: 18px;
+    line-height: 1.6;
+    text-align: center;
+    margin-bottom: 40px;
+}

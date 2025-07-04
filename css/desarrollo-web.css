@@ -1,0 +1,218 @@
+@import url('header-footer.css');
+
+.introduccion {
+    text-align: center;
+    padding: 140px 20px 60px 20px;
+}
+
+.introduccion h1 {
+    font-size: 2.5rem;
+    color: #C39AC7; 
+    margin-bottom: 10px;
+}
+
+.introduccion p {
+    font-size: 1.2rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.contenido-grid {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 30px;
+
+}
+
+.columna-izquierda {
+    display: grid;
+    grid-template-rows: auto auto;
+    gap: 30px;
+}
+
+/* Secciones */
+section {
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+    color: #5d5d5d;
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+thead {
+    background-color: #C1C4E4;
+}
+
+thead th {
+    padding: 10px;
+    text-align: left;
+    color: #333;
+}
+
+tbody td {
+    padding: 8px 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.notas-importantes {
+    grid-column: span 2;
+}
+
+.notas-importantes h2 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: #5d5d5d;
+}
+
+.notas-importantes ul {
+    padding-left: 20px;
+    list-style-type: disc;
+}
+
+.bibliografia-categorias {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.bibliografia-categorias .categoria h3 {
+    font-size: 1.2rem;
+    color: #333;
+}
+
+.bibliografia-categorias ul {
+    padding-left: 20px;
+}
+
+.cards-actividades {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.card {
+    background-color: #d1ffc9; 
+    padding: 15px;
+    border-radius: 8px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card h4 {
+    margin-top: 0;
+    color: #333;
+}
+
+.card p {
+    margin: 10px 0 0;
+    font-size: 0.95rem;
+    color: #555;
+}
+
+.card.obligatorio {
+    background-color: #f4cff8; 
+    color: white;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
+}
+
+.card ul li {
+    color: rgb(56, 56, 243);
+    text-decoration: underline;
+    list-style: none;
+}
+
+@media (max-width: 600px) {
+    .introduccion {
+        padding: 100px 15px 40px 15px;
+    }
+
+    .introduccion h1 {
+        font-size: 1.8rem;
+    }
+
+    .introduccion p {
+        font-size: 1rem;
+        max-width: 100%;
+    }
+
+    .contenido-grid {
+        grid-template-columns: 1fr; 
+        padding: 20px;
+    }
+
+    .columna-izquierda {
+        grid-template-rows: auto; 
+        gap: 20px;
+    }
+
+    section {
+        padding: 15px;
+    }
+
+    table {
+        font-size: 0.9rem;
+    }
+
+    .cards-actividades {
+        grid-template-columns: 1fr; 
+    }
+
+    .card {
+        padding: 12px;
+    }
+
+    .card h4 {
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 900px) {
+    .contenido-grid {
+        grid-template-columns: 1fr 1fr; 
+        padding: 30px;
+    }
+
+    .columna-izquierda {
+        grid-template-rows: auto auto;
+    }
+
+    .cards-actividades {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .card {
+        padding: 15px;
+    }
+
+    .card h4 {
+        font-size: 1.3rem;
+    }
+}
+
+@media (min-width: 1200px) {
+    .contenido-grid {
+        grid-template-columns: 1fr 2fr;
+        gap: 40px;
+        padding: 40px;
+    }
+
+    .columna-izquierda {
+        grid-template-rows: auto auto;
+        gap: 40px;
+    }
+}
+
+

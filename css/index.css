@@ -1,0 +1,167 @@
+@import url('header-footer.css');
+
+.portada {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 120px 50px 60px 50px;
+    gap: 40px;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.texto-portada {
+    flex: 1;
+}
+
+.texto-portada h1 {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.texto-portada p {
+    font-size: 17px;
+    line-height: 1.6;
+}
+
+.foto-portada {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    max-width: 50%;
+}
+
+.foto-portada img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+    .portada {
+        flex-direction: column;
+        padding: 100px 20px 40px 20px;
+    }
+
+    .foto-portada {
+        max-width: 100%;
+    }
+
+    .texto-portada h1 {
+        font-size: 24px;
+    }
+
+    .texto-portada p {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .portada {
+        padding: 80px 15px 30px 15px;
+        gap: 20px;
+    }
+
+    .texto-portada h1 {
+        font-size: 20px;
+    }
+
+    .texto-portada p {
+        font-size: 15px;
+    }
+
+    .foto-portada img {
+        max-width: 90%;
+    }
+}
+
+.materias {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    padding: 60px 50px;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.tabla-materias {
+    flex: 1;
+    overflow-x: auto;
+}
+
+.tabla-materias table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 600px; 
+}
+
+.tabla-materias th,
+.tabla-materias td {
+    border: 1px solid #ddd;
+    padding: 20px;
+    text-align: center;
+}
+
+.tabla-materias th {
+    background-color: #C39AC7;
+    font-weight: bold;
+    padding: 12px;
+    color: white;
+}
+
+.tabla-materias tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.texto-materias {
+    flex: 1;
+    margin-top: 20px;
+}
+
+.texto-materias h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.texto-materias p {
+    font-size: 17px;
+    line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+    .materias {
+        flex-direction: column;
+        padding: 40px 20px;
+    }
+
+    .tabla-materias {
+        margin-top: 20px;
+    }
+
+    .texto-materias h2 {
+        font-size: 24px;
+    }
+
+    .texto-materias p {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .materias {
+        padding: 30px 15px;
+        gap: 20px;
+    }
+
+    .texto-materias h2 {
+        font-size: 20px;
+    }
+
+    .texto-materias p {
+        font-size: 15px;
+    }
+}
+
