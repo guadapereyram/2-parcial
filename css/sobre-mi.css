@@ -43,7 +43,7 @@ section {
 .boton-linkedin {
     margin-top: 10px;
     display: inline-block;
-    background: linear-gradient(135deg, #C3D9AE, #AEDDF0);
+    background: #d95580;
     color: white;
     padding: 10px 20px;
     border-radius: 25px;
@@ -72,16 +72,16 @@ section {
 }
 
 .card-celeste {
-    background-color: #B1DDEC;
-    color: #999999;
+    background-color: #d95580;
+    color: white;
 }
 
 .card-lila {
-    background-color: #C1C4E4;
+    background-color: #a55cac;
 }
 
 .card-azul {
-    background-color: #A6B8E2;
+    background-color: #7587b3;
 }
 
 .card h2 {
